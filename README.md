@@ -51,3 +51,24 @@ The output will be in a CSV file, which you can open in XL and save as PDF (usin
 1. Adjust the columm widths. Bold what you like, and print to PDF. 
 I say print because that lets you organize the layout better than "Save as PDF"
 
+## How would I create a virtual env for python?
+Remember, it is fine to create a virtual env. But it creates a folder and files in the current directory. Make sure you dont check in these files. This is just for your reference. Once you deactivate the env, just delete the folder. Just to be safe, I will call the virtual env 'sgoci' and add that to the .gitignore as well.
+
+```
+pip install virtualenv
+virtualenv sgoci
+source sgoci/bin/activate
+pip3 install pandas
+```
+
+To code you can run
+```
+time python3 qb-to-xl-arranged.py < contributions.csv
+```
+
+When done with the coding
+```
+deactivate
+rm -rf sgoci
+```
+Only after this check-in the code.
