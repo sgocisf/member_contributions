@@ -48,7 +48,7 @@ The output will be in a CSV file, which you can open in XL and save as PDF (usin
 
 1. Open this CSV in Excel. Freeze the first row and column if you like to review. (Place the cursor in cell B2 and View/Freeze Panes)
 
-1. Adjust the columm widths. Bold what you like, and print to PDF. 
+1. Adjust the columm widths (select all cells and double click any column heading border). Bold what you like, and print to PDF. 
 I say print because that lets you organize the layout better than "Save as PDF"
 
 ## How would I create a virtual env for python?
@@ -72,3 +72,10 @@ deactivate
 rm -rf sgoci
 ```
 Only after this check-in the code.
+
+## Troubleshooting
+I get the error
+```
+ModuleNotFoundError: No module named 'pandas'
+```
+Don't worry. Just install `pandas` in a virtual env as [described above](#how-would-i-create-a-virtual-env-for-python).
