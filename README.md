@@ -55,7 +55,7 @@ I say print because that lets you organize the layout better than "Save as PDF"
 Remember, it is fine to create a virtual env. But it creates a folder and files in the current directory. Make sure you dont check in these files. This is just for your reference. Once you deactivate the env, just delete the folder. Just to be safe, I will call the virtual env 'sgoci' and add that to the .gitignore as well.
 
 ```
-pip install virtualenv
+pip3 install virtualenv
 virtualenv sgoci
 source sgoci/bin/activate
 pip3 install pandas
@@ -74,8 +74,20 @@ rm -rf sgoci
 Only after this check-in the code.
 
 ## Troubleshooting
+### ModuleNotFoundError
 I get the error
-```
+```bash
 ModuleNotFoundError: No module named 'pandas'
 ```
 Don't worry. Just install `pandas` in a virtual env as [described above](#how-would-i-create-a-virtual-env-for-python).
+
+### KeyError
+I get an error similar to 
+```bash
+Traceback (most recent call last):
+  File "qb-to-xl-arranged.py", line 95, in <module>
+    t = headings[row[2]]
+KeyError: 'Building Fund Income'
+python3 qb-to-xl-arranged.py < contributions.csv  0.92s user 0.48s system 26% cpu 5.268 total
+```
+Don't worry. It looks like a new category was added. In this case 'Building Fund Income'. You just need to create a new item in the 'headings' dictionary and mention which column, this category should be summarized under. In this example, insert the line `"Building Fund Income" : "Building Fund",` alphabetically into headings.
