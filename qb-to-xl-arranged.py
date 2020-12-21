@@ -14,6 +14,7 @@ headings = {
     "Special Services Income:Birthday Offering": "Birthday",
     "Building Fund (Building Fund)" : "Building Fund",
     "Building Fund" : "Building Fund",
+    "Building Fund Income" : "Building Fund",
     "Camping Collections (Camping Income (Collections used to offset camping expenses))": "Camping/Picnic",
     "Catholicate Day - Collections (Catholicate Day Collections)": "Catholicate",
     "Catholicate Day Collections": "Catholicate",
