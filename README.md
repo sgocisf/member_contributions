@@ -74,12 +74,14 @@ rm -rf sgoci
 Only after this check-in the code.
 
 ## Troubleshooting
+### ModuleNotFoundError
 I get the error
 ```bash
 ModuleNotFoundError: No module named 'pandas'
 ```
 Don't worry. Just install `pandas` in a virtual env as [described above](#how-would-i-create-a-virtual-env-for-python).
 
+### KeyError
 I get an error similar to 
 ```bash
 Traceback (most recent call last):
